@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cucina ed eventi · Agriturismo Torre Gialluise</title>
-<meta name="description" content="Cucina irpina con salumi, ricotta di Carmasciano e pasta fatta in casa. Battesimi, comunioni e feste nel casale tra Gesualdo e Villamaina.">
+<title>Menù · Agriturismo Torre Gialluise</title>
+<meta name="description" content="Cucina irpina con salumi, ricotta di Carmasciano e pasta fatta in casa. Il ristorante del casale tra Gesualdo e Villamaina, su prenotazione.">
 <meta name="theme-color" content="#F4EFE6">
-<link rel="canonical" href="https://fraspin02.github.io/tacard-trunfio-bozza/cucina-eventi.html">
+<link rel="canonical" href="https://fraspin02.github.io/tacard-trunfio-bozza/menu.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Agriturismo Torre Gialluise">
-<meta property="og:title" content="Cucina ed eventi · Agriturismo Torre Gialluise">
-<meta property="og:description" content="Cucina irpina con salumi, ricotta di Carmasciano e pasta fatta in casa. Battesimi, comunioni e feste nel casale tra Gesualdo e Villamaina.">
-<meta property="og:url" content="https://fraspin02.github.io/tacard-trunfio-bozza/cucina-eventi.html">
+<meta property="og:title" content="Menù · Agriturismo Torre Gialluise">
+<meta property="og:description" content="Cucina irpina con salumi, ricotta di Carmasciano e pasta fatta in casa. Il ristorante del casale tra Gesualdo e Villamaina, su prenotazione.">
+<meta property="og:url" content="https://fraspin02.github.io/tacard-trunfio-bozza/menu.html">
 <meta property="og:image" content="https://fraspin02.github.io/tacard-trunfio-bozza/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -97,8 +97,6 @@ svg.i{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-l
 .ico-btn .lbl{display:none}
 .ico-btn--wa{background:var(--olive);color:#fff}
 .ico-btn--wa:hover{background:var(--olive-d);color:#fff}
-.badge{position:absolute;top:2px;right:0;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--crusco);color:#fff;font:600 .75rem/20px var(--sans);text-align:center}
-.badge[hidden]{display:none}
 .mnav{position:fixed;inset:64px 0 auto 0;background:var(--stone);border-bottom:1px solid var(--line);padding:8px var(--gut) 20px;box-shadow:var(--sh)}
 .mnav[hidden]{display:none}
 .mnav a{display:flex;align-items:center;min-height:52px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font:500 1.3rem var(--serif)}
@@ -247,56 +245,6 @@ fieldset{border:0;padding:0;margin:0;min-width:0}
 .done h3 svg{width:24px;height:24px;color:var(--olive)}
 .demo-note{font-size:.88rem;color:var(--ink-2);margin:12px 0 0}
 
-/* shop */
-.price{font:600 1.15rem var(--sans)}
-.price-tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#5A4500;background:#FFF1B8;padding:2px 8px;border-radius:999px}
-.noimg{display:flex;align-items:center;justify-content:center;text-align:center;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,var(--stone-2) 0 12px,#DDD1BD 12px 24px);color:var(--ink-2);font-weight:600;padding:16px}
-.add{min-height:44px;padding:.6em 1.1em;font-size:.95rem}
-.add[data-added]{background:var(--olive)}
-.pd{display:grid;gap:28px}
-@media (min-width:880px){.pd{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
-.pd__img{aspect-ratio:1/1;width:100%;object-fit:cover}
-.pd .noimg{aspect-ratio:1/1;border-radius:var(--r-img)}
-.qty{display:inline-flex;align-items:center;border:1.5px solid #9A8B78;border-radius:999px;background:#fff}
-.qty button{width:44px;height:44px;border:0;background:transparent;font-size:1.3rem;cursor:pointer;color:var(--ink);border-radius:999px}
-.qty button:hover{background:var(--stone-2)}
-.qty input{width:44px;height:44px;border:0;text-align:center;font:600 1rem var(--sans);background:transparent;color:var(--ink);-moz-appearance:textfield}
-.qty input::-webkit-inner-spin-button{-webkit-appearance:none}
-.buy{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0}
-
-/* drawer */
-.drawer{position:fixed;inset:0;z-index:80;display:flex;justify-content:flex-end}
-.drawer[hidden]{display:none}
-.drawer__bg{position:absolute;inset:0;background:rgba(30,24,18,.5);border:0;padding:0;cursor:pointer}
-.drawer__panel{position:relative;width:min(420px,100%);height:100%;background:var(--stone);display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.2);animation:slide .25s ease-out}
-@keyframes slide{from{transform:translateX(30px);opacity:0}}
-.drawer__hd{display:flex;align-items:center;justify-content:space-between;padding:12px 12px 12px 20px;border-bottom:1px solid var(--line)}
-.drawer__hd h2{font-size:1.5rem;margin:0}
-.drawer__list{flex:1;overflow:auto;overscroll-behavior:contain;padding:8px 20px;list-style:none;margin:0}
-.line{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
-.line img,.line .noimg{width:64px;height:64px;border-radius:10px;object-fit:cover;aspect-ratio:1;padding:0;font-size:0}
-.line b{display:block;font-weight:600;line-height:1.3}
-.line small{color:var(--ink-2)}
-.line .qty{margin-top:6px}
-.line .qty button,.line .qty input{width:36px;height:36px}
-.rm{background:none;border:0;color:var(--ink-2);text-decoration:underline;cursor:pointer;font:400 .9rem var(--sans);min-height:44px;padding:0 4px}
-.drawer__ft{padding:16px 20px 20px;border-top:1px solid var(--line);background:var(--paper)}
-.row{display:flex;justify-content:space-between;gap:12px;margin-bottom:6px}
-.row--tot{font-weight:600;font-size:1.1rem;margin-top:8px}
-.drawer__ft .btn{width:100%;margin-top:12px}
-.empty{padding:40px 0;text-align:center;color:var(--ink-2)}
-.empty[hidden]{display:none}
-
-/* checkout */
-.co{display:grid;gap:24px}
-@media (min-width:960px){.co{grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}.co aside{position:sticky;top:88px}}
-.co fieldset{margin-bottom:28px}
-.co legend{font:500 1.45rem var(--serif);margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.co legend span{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--olive);color:#fff;font:600 .95rem var(--sans)}
-.sum{background:var(--paper);border-radius:var(--r);padding:20px;box-shadow:var(--sh)}
-.sum ul{list-style:none;margin:0 0 12px;padding:0}
-.sum li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.95rem}
-
 /* footer */
 .ftr{background:#211B15;color:var(--sand);padding:48px 0 28px;font-size:.95rem}
 .ftr a{color:var(--stone)}
@@ -320,25 +268,24 @@ fieldset{border:0;padding:0;margin:0;min-width:0}
 <header class="hdr">
  <div class="wrap hdr__in">
   <a class="brand" href="index.html" translate="no"><b>Torre Gialluise</b><small>Agriturismo · Irpinia</small></a>
-  <nav class="nav" aria-label="Principale"><a href="index.html">Il casale</a><a href="camere.html">Camere</a><a href="cucina-eventi.html" aria-current="page">Cucina ed eventi</a><a href="bottega.html">Bottega</a><a href="index.html#dove">Dove siamo</a></nav>
-  <button class="ico-btn cart-btn" type="button" aria-label="Carrello, vuoto" aria-controls="cart"><svg class="i" aria-hidden="true"><use href="#i-bag"/></svg><span class="badge" hidden>0</span></button>
+  <nav class="nav" aria-label="Principale"><a href="index.html">Il casale</a><a href="camere.html">Camere</a><a href="menu.html" aria-current="page">Menù</a><a href="index.html#eventi">Eventi</a><a href="index.html#dove">Dove siamo</a></nav>
   <a class="ico-btn ico-btn--tel" href="tel:+393336629229" aria-label="Chiama il 333 662 9229"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl">333 662 9229</span></a>
   <a class="ico-btn ico-btn--wa" href="https://wa.me/393336629229?text=Buongiorno%2C%20vorrei%20avere%20informazioni%20sull%27agriturismo." aria-label="WhatsApp, scriveteci"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span class="lbl">WhatsApp</span></a>
   <button class="ico-btn menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Apri menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
  </div>
- <nav id="mnav" class="mnav" aria-label="Menu" hidden><a href="index.html">Il casale</a><a href="camere.html">Camere</a><a href="cucina-eventi.html" aria-current="page">Cucina ed eventi</a><a href="bottega.html">Bottega</a><a href="index.html#dove">Dove siamo</a>
+ <nav id="mnav" class="mnav" aria-label="Menu" hidden><a href="index.html">Il casale</a><a href="camere.html">Camere</a><a href="menu.html" aria-current="page">Menù</a><a href="index.html#eventi">Eventi</a><a href="index.html#dove">Dove siamo</a>
   <div class="btn-row"><a class="btn btn--line" href="tel:+393336629229"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> Chiama</a><a class="btn btn--olive" href="https://wa.me/393336629229"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg> WhatsApp</a></div>
  </nav>
 </header>
 <main id="main">
 <section class="phead"><div class="wrap">
- <p class="crumbs"><a href="index.html">Home</a> / Cucina ed eventi</p>
- <h1>Cucina ed eventi</h1>
- <p class="lead">A tavola mettiamo i piatti dell'Irpinia, i salumi, il vino della nostra vigna e l'olio dei nostri ulivi.</p>
+ <p class="crumbs"><a href="index.html">Home</a> / Menù</p>
+ <h1>Il menù</h1>
+ <p class="lead">A tavola mettiamo i piatti dell'Irpinia, i salumi e il vino della nostra vigna.</p>
 </div></section>
 <section class="sec" style="padding-top:8px" aria-labelledby="menu-t"><div class="wrap split" style="align-items:start">
  <div>
-  <h2 id="menu-t">Il menù</h2>
+  <h2 id="menu-t">Piatti di esempio</h2>
   <p>Menù di esempio: i piatti cambiano con le stagioni. Prezzo medio 22–36 € a persona <span class="todo">[da confermare]</span></p>
   <div class="grid"><div><h3>Antipasti</h3><ul class="dishes"><li><span><b>Antipasto della casa</b><small>salumi, formaggi e ricotta di Carmasciano</small></span><span class="pr"><span class="todo">[€]</span></span></li><li><span><b>Verdure dell'orto</b><small>secondo stagione</small></span><span class="pr"><span class="todo">[€]</span></span></li></ul></div><div><h3>Primi</h3><ul class="dishes"><li><span><b>Ravioli fatti in casa</b><small>ripieni di ricotta</small></span><span class="pr"><span class="todo">[€]</span></span></li><li><span><b>Fusilli al ferretto</b><small>con crema di zucchine</small></span><span class="pr"><span class="todo">[€]</span></span></li></ul></div><div><h3>Secondi</h3><ul class="dishes"><li><span><b>Maialino al forno</b><small>con patate e peperoni cruschi</small></span><span class="pr"><span class="todo">[€]</span></span></li><li><span><b>Grigliata di carne</b><small>carni del territorio</small></span><span class="pr"><span class="todo">[€]</span></span></li></ul></div><div><h3>Dolci</h3><ul class="dishes"><li><span><b>Dolci della casa</b><small>crostate e dolci del giorno</small></span><span class="pr"><span class="todo">[€]</span></span></li></ul></div></div>
   <p style="margin-top:20px"><b>Orari del ristorante:</b> <span class="todo">[da inserire]</span> · solo su prenotazione</p>
@@ -347,44 +294,9 @@ fieldset{border:0;padding:0;margin:0;min-width:0}
  </div>
  <div class="mosaic">
   <div class="rimg"><img src="img/tavola-675.webp" srcset="img/tavola-480.webp 480w, img/tavola-675.webp 675w" sizes="(min-width:880px) 300px, 55vw" width="675" height="900" alt="Tavola lunga apparecchiata all'aperto la sera" loading="lazy" decoding="async"></div>
-  <div class="rimg"><img src="img/olive-800.webp" srcset="img/olive-480.webp 480w, img/olive-800.webp 800w, img/olive-1080.webp 1080w" sizes="(min-width:880px) 240px, 45vw" width="1080" height="810" alt="Olive nere sui rami degli ulivi dell'azienda" loading="lazy" decoding="async"></div>
+  <div class="rimg"><img src="img/olive-800.webp" srcset="img/olive-480.webp 480w, img/olive-800.webp 800w, img/olive-1080.webp 1080w" sizes="(min-width:880px) 240px, 45vw" width="1080" height="810" alt="Olive sui rami degli ulivi intorno al casale" loading="lazy" decoding="async"></div>
   <div class="rimg"><img src="img/uva-675.webp" srcset="img/uva-480.webp 480w, img/uva-675.webp 675w" sizes="(min-width:880px) 240px, 45vw" width="675" height="900" alt="Grappoli d'uva nera nella vigna dell'agriturismo" loading="lazy" decoding="async"></div>
  </div>
-</div></section>
-<section class="sec sec--alt" id="eventi" aria-labelledby="ev-t"><div class="wrap split">
- <div class="mosaic">
-  <div class="rimg"><img src="img/evento-fiori-673.webp" srcset="img/evento-fiori-480.webp 480w, img/evento-fiori-673.webp 673w" sizes="(min-width:880px) 300px, 55vw" width="673" height="900" alt="Allestimento con fiori bianchi per una cerimonia" loading="lazy" decoding="async"></div>
-  <div class="rimg"><img src="img/sera-800.webp" srcset="img/sera-480.webp 480w, img/sera-800.webp 800w, img/sera-1080.webp 1080w" sizes="(min-width:880px) 240px, 45vw" width="1080" height="719" alt="Il casale illuminato di sera con i tavoli in giardino" loading="lazy" decoding="async"></div>
-  <div class="rimg"><img src="img/arco-sera-800.webp" srcset="img/arco-sera-480.webp 480w, img/arco-sera-800.webp 800w, img/arco-sera-1080.webp 1080w" sizes="(min-width:880px) 240px, 45vw" width="1080" height="810" alt="Tavolata sotto un arco in pietra al tramonto" loading="lazy" decoding="async"></div>
- </div>
- <div>
-  <span class="eyebrow">Eventi</span>
-  <h2 id="ev-t">Feste e cerimonie al casale</h2>
-  <p>Battesimi, comunioni, compleanni, anniversari e pranzi di lavoro. Scegliete con noi il menù, poi pensiamo noi alla tavola e al servizio.</p>
-  <ul class="ticks">
-   <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Sala con archi in pietra e terrazza sulle colline</span></li>
-   <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Menù concordato, con i prodotti dell'azienda</span></li>
-   <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Giardino e area giochi per i bambini</span></li>
-   <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Parcheggio nella proprietà</span></li>
-  </ul>
-  <p>Capienza: <span class="todo">[da inserire]</span> invitati in sala, <span class="todo">[da inserire]</span> all'aperto.</p>
- </div>
-</div></section>
-<section class="sec" id="preventivo" aria-labelledby="preventivo-t"><div class="wrap split" style="align-items:start">
- <div><h2 id="preventivo-t">Chiedete un preventivo</h2><p class="lead">Diteci data e numero di invitati: vi richiamiamo noi per i dettagli.</p>
- <p>Oppure chiamate il <a href="tel:+393336629229">333 662 9229</a>.</p></div>
- <div><form class="form" id="ev-form" data-demo="ev-ok" aria-labelledby="preventivo-t">
- <div class="fgrid">
-  <div class="field"><label for="tipo">Tipo di evento</label><select id="tipo" name="tipo" required><option>Battesimo</option><option>Comunione</option><option>Cresima</option><option>Compleanno</option><option>Anniversario</option><option>Matrimonio</option><option>Pranzo aziendale</option><option>Altro</option></select></div>
-  <div class="field"><label for="data">Data indicativa</label><input id="data" name="data" type="date" required aria-describedby="data-e"><p class="err" id="data-e" hidden><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>Scegliete una data, anche indicativa</p></div>
-  <div class="field"><label for="invitati">Numero di invitati</label><input id="invitati" name="invitati" type="number" required aria-describedby="invitati-e" min="1" inputmode="numeric"><p class="err" id="invitati-e" hidden><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>Indicate quante persone, anche circa</p></div>
-  <div class="field"><label for="ev-nome">Nome</label><input id="ev-nome" name="ev-nome" type="text" required aria-describedby="ev-nome-e" autocomplete="name"><p class="err" id="ev-nome-e" hidden><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>Inserite il vostro nome</p></div>
-  <div class="field"><label for="ev-tel">Telefono</label><input id="ev-tel" name="ev-tel" type="tel" required aria-describedby="ev-tel-e" autocomplete="tel" inputmode="tel" data-rule="tel"><p class="err" id="ev-tel-e" hidden><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>Inserite un numero di telefono, ci serve per rispondervi</p></div>
-  <div class="field full"><label for="ev-note">Raccontateci l'evento <span class=opt>(facoltativo)</span></label><textarea id="ev-note" name="ev-note" aria-describedby="ev-note-h"></textarea><p class="help" id="ev-note-h">Pranzo o cena, esigenze alimentari, allestimenti.</p></div>
- </div>
- <button class="btn btn--main" type="submit" style="margin-top:18px">Chiedi un preventivo</button>
-</form>
-<div class="done" id="ev-ok" hidden role="status"><h3><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Richiesta pronta</h3><p>Vi chiamiamo per parlare del menù e degli spazi.</p><p class="demo-note">Questa è una bozza: il modulo non invia ancora nulla.</p></div></div>
 </div></section>
 </main>
 <footer class="ftr">
@@ -397,7 +309,7 @@ fieldset{border:0;padding:0;margin:0;min-width:0}
    </div>
    <div>
     <h3>Pagine</h3>
-    <ul><li><a href="index.html">Il casale</a></li><li><a href="camere.html">Camere</a></li><li><a href="cucina-eventi.html">Cucina ed eventi</a></li><li><a href="bottega.html">Bottega</a></li><li><a href="index.html#dove">Dove siamo</a></li><li><a href="checkout.html">Checkout</a></li></ul>
+    <ul><li><a href="index.html">Il casale</a></li><li><a href="camere.html">Camere</a></li><li><a href="menu.html">Menù</a></li><li><a href="index.html#eventi">Eventi</a></li><li><a href="index.html#dove">Dove siamo</a></li></ul>
    </div>
    <div>
     <h3>Dove siamo</h3>
@@ -412,21 +324,6 @@ fieldset{border:0;padding:0;margin:0;min-width:0}
   </div>
  </div>
 </footer>
-<div id="cart" class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-t" hidden>
- <button class="drawer__bg" type="button" data-close-cart tabindex="-1" aria-label="Chiudi il carrello"></button>
- <div class="drawer__panel">
-  <div class="drawer__hd"><h2 id="cart-t">Il vostro carrello</h2><button class="ico-btn drawer__close" type="button" data-close-cart aria-label="Chiudi il carrello"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button></div>
-  <ul id="cart-list" class="drawer__list"></ul>
-  <div id="cart-empty" class="empty"><p>Il carrello è vuoto.<br>Date un'occhiata alla bottega.</p><a class="btn btn--line" href="bottega.html">Vai alla bottega</a></div>
-  <div id="cart-ft" class="drawer__ft" hidden>
-   <div class="row"><span>Subtotale</span><b id="cart-sub">0,00 €</b></div>
-   <div class="row"><span>Spedizione</span><span>calcolata al checkout</span></div>
-   <a class="btn btn--main" href="checkout.html">Vai al checkout <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-   <button class="btn btn--line" type="button" data-close-cart style="width:100%;margin-top:8px">Continua a guardare</button>
-  </div>
- </div>
-</div>
-<p id="cart-live" class="visually-hidden" aria-live="polite"></p>
 <script src="app.js" defer></script>
 </body>
 </html>
