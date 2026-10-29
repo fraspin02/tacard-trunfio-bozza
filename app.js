@@ -9,8 +9,10 @@
       mb.setAttribute("aria-expanded", open);
       mb.setAttribute("aria-label", open ? "Chiudi menu" : "Apri menu");
       mn.hidden = !open;
+      document.documentElement.classList.toggle("nav-open", open);
       $(".menu-btn use").setAttribute("href", open ? "#i-x" : "#i-menu");
     };
+    matchMedia("(min-width:1000px)").addEventListener("change", e => { if (e.matches) set(false); });
     mb.addEventListener("click", () => set(mn.hidden));
     mn.addEventListener("click", e => { if (e.target.closest("a")) set(false); });
     document.addEventListener("keydown", e => { if (e.key === "Escape" && !mn.hidden) { set(false); mb.focus(); } });

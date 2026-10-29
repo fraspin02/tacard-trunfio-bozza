@@ -68,7 +68,7 @@ def head(title, desc, path, extra=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="theme-color" content="#F4EFE6">
+<meta name="theme-color" content="#F3EEE4">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
@@ -96,14 +96,18 @@ def header(active):
 <a class="skip" href="#main">Vai al contenuto</a>
 <header class="hdr">
  <div class="wrap hdr__in">
-  <a class="brand" href="index.html" translate="no"><b>Torre Gialluise</b><small>Agriturismo · Irpinia</small></a>
+  <button class="ico-btn menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Apri menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  <a class="brand" href="index.html" translate="no">Torre Gialluise</a>
   <nav class="nav" aria-label="Principale">{links}</nav>
   <a class="ico-btn ico-btn--tel" href="tel:{TEL}" aria-label="Chiama il {TEL_TXT}">{ico("phone")}<span class="lbl">{TEL_TXT}</span></a>
   <a class="ico-btn ico-btn--wa" href="{wa("Buongiorno, vorrei avere informazioni sull'agriturismo.")}" aria-label="WhatsApp, scriveteci">{ico("chat")}<span class="lbl">WhatsApp</span></a>
-  <button class="ico-btn menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Apri menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
  </div>
- <nav id="mnav" class="mnav" aria-label="Menu" hidden>{links}
-  <div class="btn-row"><a class="btn btn--line" href="tel:{TEL}">{ico("phone")} Chiama</a><a class="btn btn--olive" href="{WA}">{ico("chat")} WhatsApp</a></div>
+ <nav id="mnav" class="mnav" aria-label="Menu" hidden>
+  <div class="mnav__links">{links}</div>
+  <div class="mnav__foot">
+   <p>Via Cupa del Paradiso, SS 428 · Gesualdo (AV)</p>
+   <div class="btn-row"><a class="btn btn--main" href="tel:{TEL}">{ico("phone")} Chiama</a><a class="btn btn--line" href="{WA}">{ico("chat")} WhatsApp</a></div>
+  </div>
  </nav>
 </header>
 """
@@ -114,7 +118,7 @@ def footer():
  <div class="wrap">
   <div class="ftr__grid">
    <div>
-    <h2>Torre Gialluise</h2>
+    <h2 translate="no">Torre Gialluise</h2>
     <p>Agriturismo con camere, cucina ed eventi tra Gesualdo e Villamaina, in Irpinia.</p>
     <p><a href="tel:{TEL}">{TEL_TXT}</a> · <a href="{WA}">WhatsApp</a><br>Email {todo()}</p>
    </div>
@@ -190,7 +194,7 @@ def home():
    </div>
    <p class="hero__note">{ico("phone")} <span>Oppure chiamate il <a href="tel:{TEL}">{TEL_TXT}</a></span></p>
   </div>
-  <div class="arch">{pic("hero", "Il casale-torre in pietra di Torre Gialluise tra gli ulivi, sotto un cielo con nuvole", "(min-width:880px) 520px, calc(100vw - 32px)", "hero__img", eager=True)}</div>
+  <figure class="arch">{pic("hero", "Il casale-torre in pietra di Torre Gialluise tra gli ulivi, sotto un cielo con nuvole", "(min-width:880px) 520px, calc(100vw - 32px)", "hero__img", eager=True)}<figcaption>Il casale tra gli ulivi, sulla SS 428</figcaption></figure>
  </div>
 </section>
 
